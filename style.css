@@ -1,0 +1,24 @@
+.content{
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+.item{
+    padding: 40px 20px;
+}
+a{
+    color: #3190FF;
+}
+
+
+.loader {
+    width: 20px;
+    height: 20px;
+    background: #3190ff;
+    
+    margin: 150px auto;
+}
+.title{
+    display: inline;
+    word-wrap:break-word;
+}

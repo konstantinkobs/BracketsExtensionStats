@@ -1,1 +1,67 @@
-Hallo Welt.
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="kube.min.css">
+    <link rel="stylesheet" href="hint.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Brackets Extension Statistics</title>
+</head>
+<body>
+
+    <div id="content" class="content">
+        <div class="loader"></div>
+    </div>
+
+
+
+
+
+
+
+    <script id="template" type="x-tmpl-mustache">
+        {{#.}}
+            <div class="units-row item">
+                <div class="unit-50">
+                    <h1 class="title">{{metadata.title}} {{^metadata.title}}{{metadata.name}}{{/metadata.title}}</h1>
+                    <h3 class="title subheading">v{{metadata.version}}</h3>
+                    <h4 class="subheading">{{metadata.author.name}}</h4>
+                    {{#metadata.homepage}}<p><a class="hint--right" data-hint="{{metadata.homepage}}" href="{{metadata.homepage}}">project website</a></p>{{/metadata.homepage}}
+                    <blockquote>
+                        {{metadata.description}}
+                    </blockquote>
+                </div>
+                <div class="unit-50">
+                    <table class="width-100">
+                        <thead>
+                            <tr>
+                                <th>version</th>
+                                <th>downloads</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#versions}}
+                                <tr>
+                                    <td><i class="hint--top" data-hint="published {{published}}">{{version}}</i></td>
+                                    <td>{{downloads}}</td>
+                                </tr>
+                            {{/versions}}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td><strong>total</strong></td>
+                                <td><strong>{{totalDownloads}}</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        {{/.}}
+    </script>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
