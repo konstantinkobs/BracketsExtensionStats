@@ -29,8 +29,8 @@
    
     <script id="template" type="x-tmpl-mustache">
         {{#.}}
-            <div class="item blocks-2 blocks-mobile-100">
-                <div>
+            <div class="units-row item">
+                <div class="unit-50">
                     <h1 class="title">{{metadata.title}} {{^metadata.title}}{{metadata.name}}{{/metadata.title}}</h1>
                     <h3 class="title subheading">v{{metadata.version}}</h3>
                     <h4 class="subheading">{{metadata.author.name}}</h4>
@@ -39,7 +39,7 @@
                         {{metadata.description}}
                     </blockquote>
                 </div>
-                <div>
+                <div class="unit-50">
                     <table class="width-100">
                         <thead>
                             <tr>
