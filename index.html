@@ -51,7 +51,7 @@
                             {{#versions}}
                                 <tr>
                                     <td><i class="hint--top" data-hint="published {{published}}">{{version}}</i></td>
-                                    <td>{{downloads}}</td>
+                                    <td>{{downloads}}{{^downloads}}0{{/downloads}}</td>
                                 </tr>
                             {{/versions}}
                         </tbody>
