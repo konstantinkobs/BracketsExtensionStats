@@ -9,14 +9,17 @@
 a{
     color: #3190FF;
 }
-
-
-.loader {
-    width: 20px;
-    height: 20px;
+.header{
     background: #3190ff;
-    
-    margin: 150px auto;
+    padding: 30px;
+}
+.header input{
+    font-size: 150%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: #f1f7ff;
+    text-align: center;
 }
 .title{
     display: inline;
