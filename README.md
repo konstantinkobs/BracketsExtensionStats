@@ -1,6 +1,13 @@
 #Brackets Extension Statistics
 This website shows download statistics for all [Brackets](http://brackets.io/) Extension in the [Brackets Extension Registry](https://brackets-registry.aboutweb.com/)
 
+##How to use this site?
+Load the website and wait, until all the data was fetched and processed. Then you will get a beautiful overview over all extensions and their download statistics. In the table on the right to the title and description you will find the *last five* version numbers and the amount of downloads as well as the amount of total downloads.
+
+If you want to see all download numbers for all versions, just click on the table body. This will enlarge the table if possible. Click one more time for shrinking it again.
+
+Hover over the version number with your mouse and you should see the publishing date of that version.
+
 ##How does it work?
 The [Brackets Extension Registry](https://brackets-registry.aboutweb.com/) has an unofficial API for download statistics. We were inspired by [this tweet](https://twitter.com/brktsextensions/status/481858349642682368) and want to provide a beautiful overview over all extension downloads.
 
