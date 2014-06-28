@@ -25,3 +25,11 @@ a{
     display: inline;
     word-wrap:break-word;
 }
+
+/* Show only the last 5 updates */
+.shortTable tr{
+    display: none;
+}
+.shortTable tr:nth-last-child(-n+5){
+    display: table-row;
+}
