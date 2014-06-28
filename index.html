@@ -31,7 +31,7 @@
         {{#.}}
             <div id="{{metadata.name}}" class="units-row item">
                 <div class="unit-50">
-                    <h1 class="title"><a class="hint--right" data-hint="get a link to this extension" href="#{{metadata.name}}">{{metadata.title}} {{^metadata.title}}{{metadata.name}}{{/metadata.title}}</a></h1>
+                    <h1 class="title hint--right" data-hint="get a link to this extension"><a href="#{{metadata.name}}">{{metadata.title}} {{^metadata.title}}{{metadata.name}}{{/metadata.title}}</a></h1>
                     <h3 class="title subheading">v{{metadata.version}}</h3>
                     <h4 class="subheading">{{metadata.author.name}}</h4>
                     {{#metadata.homepage}}<p><a class="hint--right" data-hint="{{metadata.homepage}}" href="{{metadata.homepage}}">project website</a></p>{{/metadata.homepage}}

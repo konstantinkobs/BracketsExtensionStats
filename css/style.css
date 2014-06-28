@@ -31,7 +31,6 @@ a{
 .title a{
     color: black;
     text-decoration: none;
-    word-wrap:break-word;
 }
 
 /* Show only the last 5 updates */
