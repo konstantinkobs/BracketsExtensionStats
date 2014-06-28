@@ -8,6 +8,8 @@ If you want to see all download numbers for all versions, just click on the tabl
 
 Hover over the version number with your mouse and you should see the publishing date of that version.
 
+If you want to check just one extension periodically, it is easy to bookmark a link to its entry. Just find the extension entry and click on its title. This will generate a custom link to this extension entry. Now you can bookmark the website. When you click on your bookmark, the site will load all extension statistics and jump to your extension entry. A little goodie: The table will automatically expand to check all of your download numbers.
+
 ##How does it work?
 The [Brackets Extension Registry](https://brackets-registry.aboutweb.com/) has an unofficial API for download statistics. We were inspired by [this tweet](https://twitter.com/brktsextensions/status/481858349642682368) and want to provide a beautiful overview over all extension downloads.
 

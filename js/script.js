@@ -10,6 +10,11 @@ $(function(){
         view = data;
         var rendered = Mustache.render(template, data);
         $('#content').html(rendered);
+        
+        // Jump to Hash value if set
+        if(location.hash !== "#"){
+            window.location.href = location.hash;            
+        }
     });
     
     
