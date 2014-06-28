@@ -12,7 +12,7 @@ $(function(){
         $('#content').html(rendered);
         
         // Jump to Hash value if set
-        if(location.hash !== "#" || location.hash !== ""){
+        if(location.hash !== ""){
             window.location.href = location.hash;
         }
     });
