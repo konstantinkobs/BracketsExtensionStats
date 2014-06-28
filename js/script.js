@@ -12,8 +12,8 @@ $(function(){
         $('#content').html(rendered);
         
         // Jump to Hash value if set
-        if(location.hash !== "#"){
-            window.location.href = location.hash;            
+        if(location.hash !== "#" || location.hash !== ""){
+            window.location.href = location.hash;
         }
     });
     
