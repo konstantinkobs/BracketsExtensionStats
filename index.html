@@ -10,14 +10,6 @@
     <title>Brackets Extension Statistics</title>
 </head>
 <body>
-
-<!--
-    <header class="header">
-        <div class="content">
-            <input type="text" placeholder="Filter for a specific extension" class="width-100">
-        </div>
-    </header>
--->
     
     <div id="content" class="content">
         <div class="spinner">
@@ -28,14 +20,19 @@
     </div>
 
    
-    <script id="template" type="x-tmpl-mustache">
-        {{#.}}
+    <script id="template" type="text/x-handlebars-template">
+        {{#each .}}
             <div id="{{metadata.name}}" class="units-row item">
                 <div class="unit-50">
-                    <h1 class="title hint--right" data-hint="get a link to this extension"><a href="#{{metadata.name}}">{{metadata.title}} {{^metadata.title}}{{metadata.name}}{{/metadata.title}}</a></h1>
+                    <h1 class="title hint--right" data-hint="get a link to this extension"><a href="#{{metadata.name}}">
+                        {{#if metadata.title}}
+                           {{metadata.title}}
+                        {{else}}
+                           {{metadata.name}}
+                        {{/if}}</a></h1>
                     <h3 class="title subheading">v{{metadata.version}}</h3>
                     <h4 class="subheading">{{metadata.author.name}}</h4>
-                    {{#metadata.homepage}}<p><a class="hint--right" data-hint="{{metadata.homepage}}" href="{{metadata.homepage}}">project website</a></p>{{/metadata.homepage}}
+                    {{#if metadata.homepage}}<p><a class="hint--right" data-hint="{{metadata.homepage}}" href="{{metadata.homepage}}">project website</a></p>{{/if}}
                     <blockquote>
                         {{metadata.description}}
                     </blockquote>
@@ -49,28 +46,40 @@
                             </tr>
                         </thead>
                         <tbody class="shortTable">
-                            {{#versions}}
+                            {{#each versions}}
                                 <tr>
-                                    <td><i class="hint--top" data-hint="published {{published}}">{{version}}</i></td>
-                                    <td>{{downloads}}{{^downloads}}0{{/downloads}}</td>
+                                    <td><i class="hint--top" data-hint="published {{pretty this.published}}">{{this.version}}</i></td>
+                                    <td>
+                                        {{#if this.downloads}}
+                                            {{this.downloads}}
+                                        {{else}}
+                                            0
+                                        {{/if}}
+                                    </td>
                                 </tr>
-                            {{/versions}}
+                            {{/each}}
                         </tbody>
                         <tfoot>
                             <tr>
                                 <td><strong>total</strong></td>
-                                <td><strong>{{totalDownloads}}{{^totalDownloads}}0{{/totalDownloads}}</strong></td>
+                                <td><strong>
+                                    {{#if totalDownloads}}
+                                        {{totalDownloads}}
+                                    {{else}}
+                                        0
+                                    {{/if}}
+                                </strong></td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
             </div>
-        {{/.}}
+        {{/each}}
     </script>
 
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/mustache.js"></script>
+    <script src="js/handlebars.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

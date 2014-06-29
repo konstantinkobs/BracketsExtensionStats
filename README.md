@@ -26,7 +26,7 @@ There is a PHP Script on [our servers](http://wikunia.de) that uses the unoffici
 This site was built with awesome projects by other people.
 
 - [Kube](http://imperavi.com/kube/) as a CSS framework
-- [jQuery](http://jquery.com) for AJAX calls and DOM manipulation
-- [mustache.js](https://github.com/janl/mustache.js) for templating
+- [jQuery](http://jquery.com/) for AJAX calls and DOM manipulation
+- [handlebars.js](http://handlebarsjs.com/) for templating
 - [HINT.css](http://kushagragour.in/lab/hint/) for the tooltips
 - [SpinKit](https://github.com/tobiasahlin/SpinKit) for the loading animation
