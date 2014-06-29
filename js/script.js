@@ -30,4 +30,12 @@ $(function(){
     });
     
     
+    // Tips and Tricks section
+    $("#tipstrickslink").click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $("#tipstricks").toggleClass("hidden");
+    });
+    
+    
 })

@@ -12,18 +12,6 @@
 a{
     color: #3190FF;
 }
-.header{
-    background: #3190ff;
-    padding: 30px;
-}
-.header input{
-    font-size: 150%;
-    padding: 20px;
-    outline: none;
-    border: none;
-    background: white;
-    text-align: center;
-}
 .title{
     display: inline;
     word-wrap:break-word;
@@ -42,4 +30,29 @@ tbody{
 }
 .shortTable tr:nth-last-child(-n+5){
     display: table-row;
+}
+
+
+/* Navbar */
+.navbar{
+    background: #eee;
+}
+.navbar a,
+.navbar span{
+    padding: 20px;
+}
+
+/*Tips and Tricks*/
+.tipstricks{
+    padding: 0 30px;
+    border-bottom: 1px solid #eee;
+    opacity: 1;
+    display: block;
+    
+    -webkit-transition: opacity .3s ease, display .3s .3s ease;
+}
+
+.hidden{
+    display: none;
+    opacity: 0;
 }
