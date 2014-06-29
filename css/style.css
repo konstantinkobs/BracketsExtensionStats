@@ -48,8 +48,6 @@ tbody{
     border-bottom: 1px solid #eee;
     opacity: 1;
     display: block;
-    
-    -webkit-transition: opacity .3s ease, display .3s .3s ease;
 }
 
 .hidden{
